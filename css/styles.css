@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color:var(--Very-dark-desaturated-blue);
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --Dark-gray: hsl(0, 0%, 59%);
+
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-cyan);
+    background-image: url("../images/bg-pattern-top.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+
+.profileCard {
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-width: 355px;
+    position: relative;
+}
+
+.profileCard__bg {
+    border-radius: 15px 15px 0 0 ;
+    width: 100%;
+}
+.profileCard__name {
+    font-size: 1rem;
+}
+.profileCard__name span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+.profileCard__city {
+    color: var(--Dark-grayish-blue);
+    margin-top: 10px;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.profileImg {
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    margin: 0;
+    top: 24%;
+    left: 35%;
+
+}
+
+.profileCard__information {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    
+}
+.profileCard__data {
+    padding: 30px;
+    width: 100%;
+    border-top: 1px solid var(--Dark-grayish-blue);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    text-align: center;
+}
+.profileCard__txt {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    font-size: .6rem;
+    letter-spacing: 2px;
+}
+.profileCard__digits {
+    font-size: 1rem;
+}
+
+

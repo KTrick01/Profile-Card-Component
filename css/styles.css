@@ -28,9 +28,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--Dark-cyan);
-    background-image: url("../images/bg-pattern-top.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    
+    background-position: left -10vw top -45vh, right bottom -55vh;
+    
+
     
 }
 
@@ -38,6 +41,7 @@ body {
 
 
 .profileCard {
+    
     margin: 10px;
     border-radius: 15px;
     display: flex;
@@ -103,5 +107,7 @@ body {
 .profileCard__digits {
     font-size: 1rem;
 }
+
+
 
 
